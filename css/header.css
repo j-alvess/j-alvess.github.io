@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  max-width: 1200px;
+  padding: 40px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-ul {
+  display: flex;
+  gap: 20px;
+}
+.header-ul a {
+  color: black;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 10px 20px;
+}
+@media (max-width: 600px) {
+  .header {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+  }
+  .header img {
+    margin: 0 auto;
+  }
+}

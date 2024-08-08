@@ -1,0 +1,54 @@
+.main {
+  max-width: 120rem;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  gap: 15rem;
+  margin-top: 90px;
+}
+.perfil-img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 7.2rem;
+  line-height: 1.125;
+  position: relative;
+}
+h1::before {
+  content: " ";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+.main div {
+  align-self: center;
+}
+.main p {
+  font-size: 2.4rem;
+  color: #525252;
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+}
+@media (max-width: 850px) {
+  .main {
+    margin-top: 40px;
+    gap: 5rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .main p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
